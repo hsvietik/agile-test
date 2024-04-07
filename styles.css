@@ -1,0 +1,48 @@
+:root {
+  --color-green-light: #91bf65;
+  --background-color: #f7f7f7;
+  --color-green: #528d18;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  background: no-repeat url(./pictures/leaves.png);
+  background-color: var(--background-color);
+}
+.display-none {
+  display: none;
+}
+section {
+  margin: 50px 20px;
+}
+button {
+  padding: 20px;
+  background-color: var(--color-green-light);
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+}
+button:hover {
+  background-color: var(--color-green);
+}
+.start-button {
+  display: block;
+  margin: 20px auto 0px;
+}
+.start-button:hover,
+.start-button:hover:focus {
+  background-color: var(--color-green);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.answer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}

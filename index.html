@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Situation Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="greatings-section" class="greatings-section">
+        <h1>Духовный Ретрит Портал в свою силу</h1>
+        <h2>Checkup техника «agile-компас»</h2>
+        <p>по книге Катерины Ленгольд "Agile Life"</p>
+        <p>
+          Для баланса цели духовного ретрита нужно ставить в трех категориях:
+        </p>
+        <ul>
+          <li>
+            <p>
+              Личная сфера. Цели, которые мы ставим в этой категории, помогают
+              нам стать лучшей версией себя: от физического состояния и работы с
+              эмоциями до реализации заложенного потенциала, формирования новых
+              знаний и навыков.
+            </p>
+          </li>
+          <li>
+            <p>
+              Социальная сфера. Цели относятся к созданию глубоких и надежных
+              отношений с близкими (родителями, детьми, супругами) и к
+              расширению круга общения через знакомство с вдохновляющими людьми
+              (менторами, ролевыми моделями).
+            </p>
+          </li>
+          <li>
+            <p>
+              Карьерная сфера. Цели в этой категории направлены на достижение
+              финансового благополучия и карьерный рост, а также оказание
+              позитивного влияния на жизни других людей через свою
+              профессиональную деятельность.
+            </p>
+          </li>
+        </ul>
+        <p>
+          Предлагаем пройти небольшой тест для опредения уровня в каждой из сфер
+        </p>
+        <p>
+          Ваша задача — вспомнить, как часто за последние две недели вы
+          испытывали то, что указано в каждом вопросе.
+        </p>
+        <button id="start" type="button" class="start-button">
+          Начать тест
+        </button>
+      </section>
+      <section id="question-section" class="question-section display-none">
+        <form>
+          <h3 id="question">Question</h3>
+          <p>Как часто за последние две недели вы испытывали это?</p>
+
+          <div id="answersList" class="answer-list">
+            <label for="never"
+              ><input type="radio" id="never" name="frequency" value="0" />Ни
+              разу</label
+            >
+
+            <label for="sometimes"
+              ><input
+                type="radio"
+                id="sometimes"
+                name="frequency"
+                value="1"
+              />Время от времени</label
+            >
+
+            <label for="often"
+              ><input
+                type="radio"
+                id="often"
+                name="frequency"
+                value="2"
+              />Часто</label
+            >
+            <input
+              type="radio"
+              name="frequency"
+              value="none"
+              id="none"
+              style="display: none"
+              checked
+            />
+          </div>
+          <p id="error" class="error-message display-none">
+            Выберите вариант ответа
+          </p>
+          <button type="button" id="submit" class="submit-button">
+            Ответить
+          </button>
+        </form>
+      </section>
+      <section id="results-section" class="display-none">
+        <h3>Ваши результаты за <span id="date"></span></h3>
+        <ul id="results"></ul>
+        <p>
+          Сделайте скриншот ваших результатов, чтобы можно было сравнить в
+          последующем.
+        </p>
+        <h5>Описание результата</h5>
+        <p>
+          Например, если вы набрали 0–2 баллов в каждой сфере, то базовые
+          потребности удовлетворены. У вас есть энергия и ресурсы для роста и
+          развития во всех сферах. Если же по всем сферам вы испытываете стресс
+          (8–10 баллов), налицо выгорание, нет чувства безопасности ни в семье,
+          ни в финансах. Несмотря на то что проблемы есть во всех сферах,
+          начинать стоит с одной цели в личной сфере. Сфокусируйтесь на работе
+          со своим физическим и эмоциональным состоянием, чтобы выйти из
+          состояния выгорания. Как видно из таблицы, выход из выгорания всегда в
+          приоритете. Остальные проблемные сферы стоит прорабатывать после.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/data.js"></script> -->
+  </body>
+</html>
