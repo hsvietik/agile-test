@@ -28,8 +28,10 @@ h3 {
 .container {
   height: 100%;
   width: 100%;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
   margin: 0px auto;
-  padding: 20px;
   max-width: 428px;
   background-image: url(./pictures/BG-05.jpg);
   background-repeat: no-repeat;
@@ -48,17 +50,21 @@ h3 {
     background-image: no-repeat url(./pictures/BG-07.jpg);
   }
 }
+main {
+  height: 80%;
+  overflow: auto;
+}
 .display-none {
   display: none;
 }
 .header-logo {
   display: block;
-  height: 150px;
+  height: 120px;
   margin-left: auto;
 }
 section {
   margin-top: 80px;
-  padding: 0px 50px;
+  padding: 0px 70px;
 }
 .hero-header {
   font-size: 26px;
@@ -84,7 +90,7 @@ button {
   border: none;
   text-transform: uppercase;
   font-size: 20px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 button:hover {
   background-color: var(--button-color-hover);
