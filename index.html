@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Situation Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -81,13 +88,15 @@
           </form>
         </section>
         <section id="results-section" class="display-none">
-          <h3>Ваши результаты за <span id="date"></span></h3>
-          <ul id="results"></ul>
-          <p>
+          <h3 class="results-text">
+            Ваши результаты за <span id="date"></span>
+          </h3>
+          <ul class="results-list" id="results"></ul>
+          <p class="results-note">
             Сделайте скриншот ваших результатов, чтобы можно было сравнить в
             последующем.
           </p>
-          <h5>Описание результата</h5>
+          <h4 class="results-subheader">Описание результата</h4>
           <p>
             Для баланса цели духовного ретрита можно ставить в трех категориях:
           </p>

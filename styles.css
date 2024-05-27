@@ -8,23 +8,26 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
   padding: 0;
   margin: 0;
   height: 100vh;
   width: 100vw;
-  /* background: no-repeat url(./pictures/leaves.png);
-  background-color: var(--background-color); */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+ul,
+li {
   padding: 0;
   margin: 0;
 }
+
 .container {
   height: 100%;
   width: 100%;
@@ -52,6 +55,8 @@ h3 {
 main {
   height: 80%;
   overflow: auto;
+  scrollbar-color: var(--button-color) #9fcee2;
+  scrollbar-width: thin;
 }
 .display-none {
   display: none;
@@ -96,7 +101,6 @@ button:hover {
 }
 .start-button {
   display: block;
-
   margin: 20px auto 0px;
 }
 .start-button:hover,
@@ -121,4 +125,23 @@ form {
   row-gap: 20px;
   font-size: 20px;
   margin-bottom: 40px;
+}
+.results-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.results-list {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.results-note {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.results-subheader {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
