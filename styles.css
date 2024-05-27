@@ -1,48 +1,119 @@
 :root {
-  --color-green-light: #91bf65;
+  --button-color-hover: #dbb698;
   --background-color: #f7f7f7;
-  --color-green: #528d18;
+  --color-white: #fffdf9;
+  --button-color: #e0c0a7;
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  font-family: "Varela Round", sans-serif;
-  font-size: 18px;
-  background: no-repeat url(./pictures/leaves.png);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  /* background: no-repeat url(./pictures/leaves.png);
+  background-color: var(--background-color); */
+}
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+  max-width: 428px;
+  background-image: url(./pictures/BG-05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--background-color);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-image: no-repeat url(./pictures/BG-06.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+    background-image: no-repeat url(./pictures/BG-07.jpg);
+  }
 }
 .display-none {
   display: none;
 }
+.header-logo {
+  display: block;
+  height: 150px;
+  margin-left: auto;
+}
 section {
-  margin: 50px 20px;
+  margin-top: 80px;
+  padding: 0px 50px;
+}
+.hero-header {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero-subheader {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.hero-description {
+  font-size: 22px;
+  margin-bottom: 100px;
 }
 button {
-  padding: 20px;
-  background-color: var(--color-green-light);
-  border-radius: 6px;
+  padding: 14px 24px;
+  color: var(--color-white);
+  font-weight: 700;
+  background-color: var(--button-color);
+  border-radius: 16px;
   border: none;
+  text-transform: uppercase;
   font-size: 20px;
+  letter-spacing: 0.2rem;
 }
 button:hover {
-  background-color: var(--color-green);
+  background-color: var(--button-color-hover);
 }
 .start-button {
   display: block;
+
   margin: 20px auto 0px;
 }
 .start-button:hover,
 .start-button:hover:focus {
-  background-color: var(--color-green);
+  background-color: var(--button-color-hover);
 }
 form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
+.question-header {
+  font-size: 22px;
+}
+.question-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 .answer-list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
+  font-size: 20px;
+  margin-bottom: 40px;
 }

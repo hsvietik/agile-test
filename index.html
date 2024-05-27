@@ -1,56 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Situation Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+   <div class="container">
+    <header>
+      <img
+        class="header-logo"
+        src="./pictures/logo-06.png"
+        alt="Портал в свою силу"
+      />
+    </header>
     <main>
+      <div>
       <section id="greatings-section" class="greatings-section">
-        <h1>Духовный Ретрит <br />Портал в свою силу</h1>
-        <h2>Checkup техника <br />«agile-компас»</h2>
-        <p>по книге Катерины Ленгольд "Agile Life"</p>
-        <p>
-          Для баланса цели духовного ретрита нужно ставить в трех категориях:
-        </p>
-        <ul>
-          <li>
-            <p>
-              Личная сфера. Цели, которые мы ставим в этой категории, помогают
-              нам стать лучшей версией себя: от физического состояния и работы с
-              эмоциями до реализации заложенного потенциала, формирования новых
-              знаний и навыков.
-            </p>
-          </li>
-          <li>
-            <p>
-              Социальная сфера. Цели относятся к созданию глубоких и надежных
-              отношений с близкими (родителями, детьми, супругами) и к
-              расширению круга общения через знакомство с вдохновляющими людьми
-              (менторами, ролевыми моделями).
-            </p>
-          </li>
-          <li>
-            <p>
-              Карьерная сфера. Цели в этой категории направлены на достижение
-              финансового благополучия и карьерный рост, а также оказание
-              позитивного влияния на жизни других людей через свою
-              профессиональную деятельность.
-            </p>
-          </li>
-        </ul>
-        <p>
-          Предлагаем пройти небольшой тест для опредения уровня в каждой из сфер
-        </p>
-        <p>
+        <h3 class="hero-header">Checkup техника <br />«agile-компас»</h3>
+        <p class="hero-subheader">по книге Катерины Ленгольд "Agile Life"</p>
+        <p class="hero-description">
           Ваша задача — вспомнить, как часто за последние две недели вы
-          испытывали то, что указано в каждом вопросе.
+          испытывали то, что указано в каждом вопросе
         </p>
         <button id="start" type="button" class="start-button">
           Начать тест
@@ -58,8 +36,8 @@
       </section>
       <section id="question-section" class="question-section display-none">
         <form>
-          <h3 id="question">Question</h3>
-          <p>Как часто за последние две недели вы испытывали это?</p>
+          <h3 class="question-header" id="question">Question</h3>
+          <p class="question-text">Как часто за последние две недели вы испытывали это?</p>
 
           <div id="answersList" class="answer-list">
             <label for="never"
@@ -122,6 +100,8 @@
         </p>
       </section>
     </main>
+   </div>
+    
     <script type="module" src="./js/index.js"></script>
     <!-- <script type="module" src="./js/data.js"></script> -->
   </body>
