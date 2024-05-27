@@ -26,6 +26,10 @@ li {
   padding: 0;
   margin: 0;
 }
+ul,
+li {
+  list-style: none;
+}
 
 .container {
   height: 100%;
@@ -67,7 +71,7 @@ main {
 }
 section {
   margin-top: 80px;
-  padding: 0px 70px;
+  padding: 0px 60px;
 }
 .hero-header {
   font-size: 26px;
@@ -76,7 +80,7 @@ section {
   margin-bottom: 10px;
 }
 .hero-subheader {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 60px;
 }
@@ -138,9 +142,18 @@ form {
 }
 .results-note {
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .results-subheader {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
+}
+.results-description-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+.results-description {
+  margin-bottom: 14px;
 }
