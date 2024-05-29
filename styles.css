@@ -4,6 +4,9 @@
   --color-white: #fffdf9;
   --button-color: #e0c0a7;
   --transition-duration: 250ms;
+  --radio-color: #f4f4f4;
+  --checked-color: #2196f3;
+
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -156,4 +159,63 @@ form {
 }
 .results-description {
   margin-bottom: 14px;
+}
+.answer-list-item {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.answer-list-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: var(--color-white);
+  border: 1px solid darkgray;
+  border-radius: 50%;
+}
+
+.answer-list-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.answer-list-item input:checked ~ .checkmark {
+  border: 1px solid var(--checked-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.answer-list-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.answer-list-item .checkmark:after {
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--checked-color);
 }
